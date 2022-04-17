@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   creationTimestamp: null
+  namespace: demo-app
   labels:
     app: httpd-deployment
   name: httpd-deployment
