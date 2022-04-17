@@ -2,14 +2,14 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
   name: demo-app
-  namespace: demo-app
+  namespace: acm-demo
   labels:
     app: demo-app
   annotations:
     apps.open-cluster-management.io/github-path: acm-demo/demo-app
-    apps.open-cluster-management.io/github-branch: master
+    apps.open-cluster-management.io/github-branch: main
 spec:
-  channel: demo-app/demo-app-latest
+  channel: acm-demo/demo-app-latest
   placement:
     placementRef:
       kind: PlacementRule
