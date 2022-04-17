@@ -2,7 +2,7 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
   name: localcluster
-  namespace: acm-demo
+  namespace: demo-app 
 spec:
   clusterSelector: {}
 
